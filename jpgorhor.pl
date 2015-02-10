@@ -6,8 +6,10 @@
 # It reports progress to the screen.
 
 # I wrote this (my first Perl program) without realising the excellent functionality
-# already built-in to command-line exiftool (thus making this script redundant):
+# already built-in to command-line exiftool:
 # http://search.cpan.org/~exiftool/Image-ExifTool-9.76/exiftool
+# So, most simply, one can, in a folder of images: $ exiftool orientation= *
+# Still, this script does a little more than that.
 
 # Prerequisites:  a system with Perl & module Image::ExifTool.
 
