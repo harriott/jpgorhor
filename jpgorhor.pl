@@ -9,7 +9,7 @@
 # already built-in to command-line exiftool:
 # http://search.cpan.org/~exiftool/Image-ExifTool-9.76/exiftool
 # So, most simply, one can, in a folder of images: $ exiftool orientation= *
-# Still, this script does a little more than that.
+# Or to go more advanced (and obviate this script) look at his whitebalance example.
 
 # Prerequisites:  a system with Perl & module Image::ExifTool.
 
