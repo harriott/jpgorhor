@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# Joseph Harriott (http://momentary.eu/) 2014
+# Joseph Harriott (http://momentary.eu/) Last change: Fri 18 Sep 2015
 
 # This script searches recursively in it's directory for jpegs, 
 # finds those with rotating orientation tags, and resets them to horizontal.
@@ -15,6 +15,7 @@
 
 # Drop this file into the parent folder that you want to work on, open a Terminal there,
 # enter the name of this file, hit return, and watch the progress!
+# Alternatively, something like: perl ~/Files/IT_stack/jpgorhor/jpgorhor.pl
 
 use strict;  use warnings;  use Image::ExifTool;  use File::Find;
 
