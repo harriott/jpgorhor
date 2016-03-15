@@ -15,7 +15,9 @@
 
 # Drop this file into the parent folder that you want to work on, open a Terminal there,
 # enter the name of this file, hit return, and watch the progress!
-# Alternatively, something like: perl ~/Files/IT_stack/jpgorhor/jpgorhor.pl
+# Alternatively, something like:
+#   perl ~/Files/IT_stack/jpgorhor/jpgorhor.pl
+#   perl /mnt/BX200/Files/IT_stack/jpgorhor/jpgorhor.pl
 
 use strict;  use warnings;  use Image::ExifTool;  use File::Find;
 
