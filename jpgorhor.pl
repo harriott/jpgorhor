@@ -19,13 +19,17 @@
 #   perl ~/Files/IT_stack/jpgorhor/jpgorhor.pl
 #   perl /mnt/BX200/Files/IT_stack/jpgorhor/jpgorhor.pl
 
-use strict;  use warnings;  use Image::ExifTool;  use File::Find;  # use File::Tee;
+use strict;  use warnings;  use Image::ExifTool;  use File::Find;  # use IO::Tee;
 
 # first, create a time check:
 END { print "This Perl program ran for ", time() - $^T, " seconds.  All changes reported.\n"}
 
 # prepare an output log:
-tee(*STDOUT, '>', 'jpgorhor.txt');
+# my $llf = "jpgorhor.txt";
+# my $llfh;
+# open( $llfh, '>>', $llf ) or die("Can't open $llf for append: $!");
+# my $tee = IO::Tee->new( $llfh, \*STDOUT );
+# select $tee;
 
 #  now work through the directory, recursively (looking for rotatable jpegs):
 #
