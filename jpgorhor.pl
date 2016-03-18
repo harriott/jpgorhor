@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# Joseph Harriott (http://momentary.eu/) Last change: Fri 18 Sep 2015
+# Joseph Harriott (http://momentary.eu/) Last change: Fri 18 Mar 2016
 
 # This script searches recursively in it's directory for jpegs, 
 # finds those with rotating orientation tags, and resets them to horizontal.
@@ -19,10 +19,13 @@
 #   perl ~/Files/IT_stack/jpgorhor/jpgorhor.pl
 #   perl /mnt/BX200/Files/IT_stack/jpgorhor/jpgorhor.pl
 
-use strict;  use warnings;  use Image::ExifTool;  use File::Find;
+use strict;  use warnings;  use Image::ExifTool;  use File::Find;  # use File::Tee;
 
 # first, create a time check:
 END { print "This Perl program ran for ", time() - $^T, " seconds.  All changes reported.\n"}
+
+# prepare an output log:
+tee(*STDOUT, '>', 'jpgorhor.txt');
 
 #  now work through the directory, recursively (looking for rotatable jpegs):
 #
