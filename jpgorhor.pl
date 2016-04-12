@@ -3,7 +3,7 @@
 
 # This script searches recursively in it's directory for jpegs, 
 # finds those with rotating orientation tags, and resets them to horizontal.
-# It reports progress to the screen.
+# It reports progress to the screen and to a log file.
 
 # I wrote this (my first Perl program) without realising the excellent functionality
 # already built-in to command-line exiftool:
@@ -16,8 +16,8 @@
 # Drop this file into the parent folder that you want to work on, open a Terminal there,
 # enter the name of this file, hit return, and watch the progress!
 # Alternatively, something like:
-#   perl ~/Files/IT_stack/jpgorhor/jpgorhor.pl
-#   perl /mnt/BX200/Files/IT_stack/jpgorhor/jpgorhor.pl -Syu 2>&1 | tee jpgorhor.txt
+#   perl /mnt/BX200/Files/IT_stack/jpgorhor/jpgorhor.pl
+#   perl /mnt/WD2000JD/Files/IT_stack/jpgorhor/jpgorhor.pl
 
 use strict;  use warnings;  use Image::ExifTool;  use File::Find;  use IO::Tee;
 
