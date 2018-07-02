@@ -1,14 +1,15 @@
 #!/usr/bin/perl
-# Joseph Harriott (http://momentary.eu/) Last change: Thu 21 Jun 2018
+# Joseph Harriott (http://momentary.eu/) Last change: Mon 02 Jul 2018
 
 # This script searches recursively in it's directory for jpegs,
 # finds those with rotating orientation tags, and resets them to horizontal.
 # It reports progress to the screen and to a log file.
 
 # I wrote this (my first Perl program) without realising the excellent functionality
-# already built-in to command-line exiftool:
-# https://metacpan.org/pod/distribution/Image-ExifTool/exiftool
-# So, most simply, one can, in a folder of images: $ exiftool orientation= *
+# already built-in to command-line exiftool
+# ( https://metacpan.org/pod/distribution/Image-ExifTool/exiftool ).
+# This Perl script can be replaced by this one-liner:
+# exiftool -r -ext jpg -overwrite_original -orientation=Horizontal -progress -if '$orientation =~ /Rotate/' .
 
 # Prerequisites for this Perl script:  a system with Perl & module Image::ExifTool.
 
