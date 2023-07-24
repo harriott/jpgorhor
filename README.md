@@ -9,6 +9,7 @@ Like Dave, I was annoyed by image rotations not being treat consistantly across 
 
 I define a command `jpo` in my [$Bash/bashrc-wm](https://github.com/harriott/OS-ArchBuilds/blob/master/jo/Bash/bashrc-wm) and my [$MSWin10\PSProfile.ps1](https://github.com/harriott/OS-MSWin10/blob/master/PSProfile.ps1).
 
+---
 ### deprecated Perl script
 
 [$onGH/jpgorhor/jpgorhor.pl](https://github.com/harriott/jpgorhor/blob/master/jpgorhor.pl) (unnecessarily) wraps
